@@ -1,8 +1,8 @@
-import cupy as np #Cupy is just a copy of numpy (or more) which works well on GPU , if u can not use that , simply replace cupy with numpy
+import numpy as np #Cupy is just a copy of numpy (or more) which works well on GPU , if u can not use that , simply replace cupy with numpy
 import random
-import read_caltech
+import readData
 import pickle
-files1,X_train, y_train = read_caltech.get_data_mat('train') #This one is from another file wich is also in this repository
+files1,X_train, y_train = readData.get_data_mat('train') #This one is from another file wich is also in this repository
 X=np.array(X_train,dtype=np.float32).T
 Y=np.array(y_train,dtype=np.float32).T
 

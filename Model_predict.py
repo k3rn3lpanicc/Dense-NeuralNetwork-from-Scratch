@@ -1,6 +1,6 @@
 import numpy as np
 import random
-import read_caltech
+import readData
 import pickle
 def loaddt(model):
     with open(model, 'rb') as filehandle:
@@ -28,4 +28,3 @@ def feed(Xs):
     return A
 
 #ok for predicting a simple example u can use feed(ur data) to see the results!
-
